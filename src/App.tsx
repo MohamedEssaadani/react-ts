@@ -1,38 +1,26 @@
 import "./App.css";
+import Container from "./components/Container";
 import Header from "./components/Header";
-import PersonDetail from "./components/PersonDetail";
+import HeaderContainer from "./components/HeaderContainer";
 import PersonList from "./components/PersonList";
 import Status from "./components/Status";
-import { Person } from "./Props/PersonProps";
+import { personList } from "./data/persons";
 
 function App() {
-  // Person
-  const person: Person = {
-    firstName: "Mohamed",
-    lastName: "ESSAADANI",
-  };
-
-  const personList: Person[] = [
-    person,
-    {
-      firstName: "Hicham",
-      lastName: "ESSAADANI",
-    },
-    {
-      firstName: "Halima",
-      lastName: "ESSAADANI",
-    },
-    {
-      firstName: "Saloi",
-      lastName: "ESSAADANI",
-    },
-  ];
-
   return (
     <div className="App">
-      <Header name="Mohamed" isLoggedIn={true} />
-      <PersonList persons={personList} />
-      <Status status="loading" />
+      <HeaderContainer>
+        <Header name="Adam" isLoggedIn={true} />
+      </HeaderContainer>
+      <Container
+        styles={{
+          border: "1px solid black",
+          padding: "1rem",
+        }}
+      >
+        <PersonList persons={personList} />
+        <Status status="loading" />
+      </Container>
     </div>
   );
 }

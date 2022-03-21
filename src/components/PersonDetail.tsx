@@ -1,13 +1,31 @@
-import PersonProps from "../Props/PersonProps"
+import { useState } from "react";
+import PersonProps from "../Props/PersonProps";
+import Button from "./Button";
+import Input from "./Input";
 
 const PersonDetail = (props: PersonProps) => {
-  return (
-    <h4> 
-        {props.person.firstName} 
-        {" "}
-        {props.person.lastName}
-    </h4>
-  )
-}
+  const [input, setInput] = useState("");
 
-export default PersonDetail
+  return (
+    <>
+      <h4>
+        {props.person.firstName} {props.person.lastName}
+      </h4>
+
+      <Input
+        value={input}
+        handleChange={(event) => {
+          setInput(event.target.value);
+        }}
+      />
+
+      <Button
+        handleClick={(event, id) => {
+          console.log("Button Clicked!", event, id);
+        }}
+      />
+    </>
+  );
+};
+
+export default PersonDetail;

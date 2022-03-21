@@ -1,13 +1,16 @@
-import HeaderProps from "../Props/HeaderProps"
+import HeaderProps from "../Props/HeaderProps";
+import Heading from "./Heading";
 
-const Header = (props : HeaderProps) => {
+const Header = ({ name, isLoggedIn }: HeaderProps) => {
   return (
     <div>
-      {props.isLoggedIn ?
-       <h2>Welcome {props.name} To React App With TS</h2> :
-        <h2>Welcome To React App With TS</h2>}
+      {isLoggedIn ? (
+        <Heading>{`Welcome ${name} To React App With TS`}</Heading>
+      ) : (
+        <Heading>Welcome To React App With TS</Heading>
+      )}
     </div>
-  )
-}
+  );
+};
 
-export default Header
+export default Header;
