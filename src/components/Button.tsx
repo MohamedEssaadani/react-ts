@@ -1,4 +1,4 @@
-import ButtonProps from "../Props/ButtonProps";
+import { ButtonProps } from "../Props/Button.types";
 
 const Button = (props: ButtonProps) => {
   return (

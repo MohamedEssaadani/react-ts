@@ -1,4 +1,4 @@
-import StatusProps from "../Props/StatusProps";
+import StatusProps from "../Props/Status.types";
 
 const Status = (props: StatusProps) => {
   const message =

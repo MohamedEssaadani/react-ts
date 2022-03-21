@@ -1,4 +1,4 @@
-import HeaderProps from "../Props/HeaderProps";
+import HeaderProps from "../Props/Header.types";
 import Heading from "./Heading";
 
 const Header = ({ name, isLoggedIn }: HeaderProps) => {
