@@ -2,8 +2,14 @@ import { useContext } from "react";
 import { AuthUserContext } from "./UserContext";
 
 const User = () => {
+  /**
+   * *Hooks
+   */
   const authUserContext = useContext(AuthUserContext);
 
+  /**
+   *  * Handle Login
+   */
   const handleLogin = () => {
     if (authUserContext) {
       authUserContext.setUser({
@@ -13,6 +19,9 @@ const User = () => {
     }
   };
 
+  /**
+   *  * Handle Login
+   */
   const handleLogout = () => {
     if (authUserContext) {
       authUserContext.setUser(null);

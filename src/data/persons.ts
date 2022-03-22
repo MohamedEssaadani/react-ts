@@ -12,11 +12,8 @@ export const personList: Person[] = [
     lastName: "ESSAADANI",
   },
   {
-    firstName: "Halima",
-    lastName: "ESSAADANI",
+    firstName: "Adam",
+    lastName: "BENTOUIL",
   },
-  {
-    firstName: "Saloi",
-    lastName: "ESSAADANI",
-  },
+
 ];

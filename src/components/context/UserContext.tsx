@@ -14,13 +14,20 @@ type AuthUserContextType = {
   setUser: React.Dispatch<React.SetStateAction<AuthUser | null>>;
 };
 
-// create context
+/**
+ *  * Create Context
+ */
 export const AuthUserContext = createContext<AuthUserContextType | null>(null);
 
-// provide context
+/**
+ *  * Provide Context
+ */
 const AuthUserContextProvider = ({
   children,
 }: AuthUserContextProviderProps) => {
+  /**
+   *  * Hooks
+   */
   const [user, setUser] = useState<AuthUser | null>(null);
 
   return (
