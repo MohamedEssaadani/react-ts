@@ -4,9 +4,9 @@ import Box from "./components/context/Box";
 import ThemeContextProvider from "./components/context/ThemeContext";
 import User from "./components/context/User";
 import AuthUserContextProvider from "./components/context/UserContext";
+import Counter from "./components/Counter";
 import Header from "./components/Header";
 import HeaderContainer from "./components/HeaderContainer";
-import DomRef from "./components/refs/DomRef";
 
 function App() {
   return (
@@ -33,7 +33,11 @@ function App() {
           <User />
         </AuthUserContextProvider>
 
-        <DomRef />
+        {/* <DomRef />
+
+        <MutableRef /> */}
+
+        <Counter message="Counter is " />
       </Container>
     </div>
   );
