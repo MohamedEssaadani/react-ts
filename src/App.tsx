@@ -4,11 +4,6 @@ import Box from "./components/context/Box";
 import ThemeContextProvider from "./components/context/ThemeContext";
 import Header from "./components/Header";
 import HeaderContainer from "./components/HeaderContainer";
-import PersonList from "./components/PersonList";
-import Status from "./components/Status";
-import { personList } from "./data/persons";
-import Loggedin from "./state/Auth";
-import Counter from "./state/Counter";
 
 function App() {
   return (
