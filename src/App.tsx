@@ -1,5 +1,7 @@
 import "./App.css";
 import Container from "./components/Container";
+import Box from "./components/context/Box";
+import ThemeContextProvider from "./components/context/ThemeContext";
 import Header from "./components/Header";
 import HeaderContainer from "./components/HeaderContainer";
 import PersonList from "./components/PersonList";
@@ -22,8 +24,12 @@ function App() {
       >
         {/* <PersonList persons={personList} />
         <Status status="loading" /> */}
-        <Counter />
-        <Loggedin />
+        {/* <Counter />
+        <Loggedin /> */}
+
+        <ThemeContextProvider>
+          <Box />
+        </ThemeContextProvider>
       </Container>
     </div>
   );
