@@ -1,5 +1,5 @@
 import { useState } from "react";
-import PersonProps from "../Props/Person.types";
+import PersonProps from "../props/Person.types";
 import Button from "./Button";
 import Input from "./Input";
 

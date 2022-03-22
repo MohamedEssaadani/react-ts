@@ -20,6 +20,7 @@ function App() {
       >
         <PersonList persons={personList} />
         <Status status="loading" />
+        
       </Container>
     </div>
   );

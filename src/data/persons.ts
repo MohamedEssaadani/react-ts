@@ -1,4 +1,4 @@
-import { Person } from "../Props/Person.types";
+import { Person } from "../props/Person.types";
 
  const person: Person = {
   firstName: "Mohamed",
