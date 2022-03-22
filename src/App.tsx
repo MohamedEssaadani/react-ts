@@ -6,6 +6,7 @@ import User from "./components/context/User";
 import AuthUserContextProvider from "./components/context/UserContext";
 import Header from "./components/Header";
 import HeaderContainer from "./components/HeaderContainer";
+import DomRef from "./components/refs/DomRef";
 
 function App() {
   return (
@@ -31,6 +32,8 @@ function App() {
         <AuthUserContextProvider>
           <User />
         </AuthUserContextProvider>
+
+        <DomRef />
       </Container>
     </div>
   );

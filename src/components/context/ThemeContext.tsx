@@ -5,10 +5,16 @@ type ThemeContextProviderProps = {
   children: ReactNode;
 };
 
-// create context
+/**
+ * * Create Context
+ */
 export const ThemeContext = createContext(theme);
 
-// provide context
+/**
+ * * Provide Context
+ * @param children
+ * @returns JSX
+ */
 const ThemeContextProvider = ({ children }: ThemeContextProviderProps) => {
   return (
     <ThemeContext.Provider value={theme}>{children}</ThemeContext.Provider>

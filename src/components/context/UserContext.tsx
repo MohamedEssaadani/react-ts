@@ -1,5 +1,8 @@
 import { createContext, ReactNode, useState } from "react";
 
+/**
+ * *Types
+ */
 export type AuthUser = {
   name: string;
   email: string;
@@ -20,7 +23,9 @@ type AuthUserContextType = {
 export const AuthUserContext = createContext<AuthUserContextType | null>(null);
 
 /**
- *  * Provide Context
+ * * Provide Context
+ * @param children
+ * @returns JSX
  */
 const AuthUserContextProvider = ({
   children,
