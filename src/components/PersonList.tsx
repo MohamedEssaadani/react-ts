@@ -1,4 +1,4 @@
-import PersonListProps from "../props/PersonList.types";
+import PersonListProps from "../types/PersonList.types";
 import PersonDetail from "./PersonDetail";
 
 const PersonList = (props: PersonListProps) => {

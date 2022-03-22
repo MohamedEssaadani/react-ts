@@ -5,6 +5,7 @@ import HeaderContainer from "./components/HeaderContainer";
 import PersonList from "./components/PersonList";
 import Status from "./components/Status";
 import { personList } from "./data/persons";
+import Loggedin from "./state/Auth";
 
 function App() {
   return (
@@ -20,7 +21,7 @@ function App() {
       >
         <PersonList persons={personList} />
         <Status status="loading" />
-        
+        <Loggedin />
       </Container>
     </div>
   );
