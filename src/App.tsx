@@ -6,6 +6,7 @@ import PersonList from "./components/PersonList";
 import Status from "./components/Status";
 import { personList } from "./data/persons";
 import Loggedin from "./state/Auth";
+import Counter from "./state/Counter";
 
 function App() {
   return (
@@ -19,8 +20,9 @@ function App() {
           padding: "1rem",
         }}
       >
-        <PersonList persons={personList} />
-        <Status status="loading" />
+        {/* <PersonList persons={personList} />
+        <Status status="loading" /> */}
+        <Counter />
         <Loggedin />
       </Container>
     </div>
