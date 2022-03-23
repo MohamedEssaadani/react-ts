@@ -1,19 +1,12 @@
 import "./App.css";
 import Container from "./components/Container";
-<<<<<<< HEAD
-import Box from "./components/context/Box";
-import ThemeContextProvider from "./components/context/ThemeContext";
-import User from "./components/context/User";
-import AuthUserContextProvider from "./components/context/UserContext";
-import Counter from "./components/Counter";
-=======
 import List from "./components/generics/List";
->>>>>>> hooks-ts
 import Header from "./components/Header";
 import HeaderContainer from "./components/HeaderContainer";
+import RandomNumber from "./components/restriction/RandomNumber";
 
 function App() {
-  const listClickHandler = (item: string) => {
+  const listClickHandler = (item: {}) => {
     alert(item);
   };
   return (
@@ -49,6 +42,8 @@ function App() {
           onClick={listClickHandler}
         />
         <List listItems={[22, 13, 33]} onClick={listClickHandler} />
+
+        <RandomNumber value={33} isPositive />
       </Container>
     </div>
   );
