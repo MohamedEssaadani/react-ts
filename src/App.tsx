@@ -34,7 +34,6 @@ function App() {
         </AuthUserContextProvider>
 
         {/* <DomRef />
-
         <MutableRef /> */}
 
         <Counter message="Counter is " />
